@@ -89,7 +89,7 @@ def main():
         full_info.append({"_id":i, "name": all_names[i - 1], "price": all_prices[i - 1]})
 
     myclient = pymongo.MongoClient(
-        "mongodb+srv://baruch:13Z13x13@cluster0.mfa9n.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        "mongodb+srv://baruch:XXXpasswordXXX@cluster0.mfa9n.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     mydb = myclient["mydatabase"]
     print(myclient.list_database_names())
     dblist = myclient.list_database_names()
